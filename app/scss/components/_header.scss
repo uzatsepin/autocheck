@@ -1,0 +1,126 @@
+.header {
+    &__wrapper {
+        min-height: 680px;
+        background-image: url('../../images/main-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 32px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 0 80px;
+    }
+    &__top {
+        height: 120px;
+        border-bottom: 1px solid $borderTop;
+        max-width: 1280px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 44px 0 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    &__logo {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        border: 2px solid $mainBlue;
+        padding: 15px;
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            &-item {
+                &-link {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 140%;
+                    transition: all 250ms ease-in-out;
+                    border-bottom: 2px solid transparent;
+                    padding-bottom: 2px;
+                    &:hover {
+                        border-bottom: 2px solid $mainBlue;
+                    }
+                    &:active {
+                        color: $mainBlue;
+                    }
+                }
+            }
+        }
+    }
+    &__phone {
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.53);
+        box-shadow: $defaultShadow;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        transition: all 250ms ease-in-out;
+        &:before {
+            content: '';
+            width: 18px;
+            height: 31px;
+            display: block;
+            background-image: url('../../images/phone-icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+        &:hover {
+            background: $black;
+        }
+    }
+    &__title {
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 110%;
+        max-width: 530px;
+    }
+    &__btns {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 119px;
+    }
+    &__btn {
+        &.btn-primary {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &::after {
+                content: '';
+                background-image: url('../../images/arrow-right.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: flex;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &.btn-secondary {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &::before {
+                content: '';
+                background-image: url('../../images/consult-icon.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: flex;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.check {
+    margin: 60px 0;
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 110%;
+        color: $white;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+        position: relative;
+        z-index: 99;
+        margin-top: 40px;
+    }
+    &__item {
+        max-width: 469px;
+        border-radius: 32px;
+        background: $white;
+        padding: 24px;
+        position: relative;
+        z-index: 99;
+        height: 243px;
+        &-title {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 140%;
+            color: $black;
+            max-width: 275px;
+        }
+        &-descr {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 140%;
+            color: $gray;
+            max-width: 190px;
+            margin-top: 14px;
+        }
+        &-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: 32px;
+            &.engine {
+                top: 50%;
+                transform: translateY(-50%);
+                right: 30px;
+            }
+        }
+    }
+}
